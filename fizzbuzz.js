@@ -1,4 +1,5 @@
 function fizzBuzz() {
+    
     // creating a for loop that runs through every number 1 - 100
     for (i = 1; i < 101; i++) {
         // if the number is a multiple of 3 AND NOT a multiple of 5: Print "fizz"
