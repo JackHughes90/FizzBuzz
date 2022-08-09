@@ -1,7 +1,11 @@
+const readline = require('readline-sync');
+
 function fizzBuzz() {
-    
+    console.log("how many numbers would you like to count to?");
+    let response = readline.prompt();
+    var num = parseInt(response);
     // creating a for loop that runs through every number 1 - 100
-    for (i = 1; i <= 200; i++) {
+    for (i = 1; i <= num; i++) {
         var arr = [];
         
         // if the number is a multiple of 3: Add "fizz" to string
@@ -27,6 +31,10 @@ function fizzBuzz() {
             if (i % 13 == 0) {
                 arr.unshift('fezz');
             }
+        }
+
+        if (i % 17 == 0) {
+            arr.reverse();
         }
 
         // if array is empty: Print number
